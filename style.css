@@ -85,8 +85,10 @@ header h1{
 	bottom: 0px;
 	width: 100%;
 	font-family: Asap,sans-serif;
-	font-size: 20px;
-	
+	font-size: 20px;	
+}
+.fa-heart{
+	color: red;
 }
 .green-glow{
 	border: 4px solid #4dcc7d;
