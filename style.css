@@ -6,6 +6,9 @@
 }
 body{
 	background-color: #24272E;
+	height: 100vh;
+	display: flex;
+	flex-direction: column;
 }
 header {
 	background-color: white;
@@ -51,10 +54,12 @@ header h1{
 	font-family: Asap,sans-serif;
 	color: white;
 	text-align: center;
+	margin-top: 20px;
 }
 
 .choices{
 	text-align: center;
+	margin-top: 20px;
 }
 .choice{
 	display: inline-block;
@@ -77,15 +82,22 @@ header h1{
 	margin-top: 20px;
 
 }
+footer{
+	background-color: #E74C3C;
+	width: 100vw;
+	height: 2rem;
+	margin-top: auto;
+}
 
 .copyright{
 	text-align: center;
-	position: fixed;
 	color: white;
 	bottom: 0px;
 	width: 100%;
 	font-family: Asap,sans-serif;
-	font-size: 20px;	
+	font-size: 20px;
+	line-height: 2rem;
+	
 }
 .fa-heart{
 	color: red;
