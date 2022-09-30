@@ -1,3 +1,3 @@
 # Rock Paper Scissors Game
-### Developed By Ayaz Alam 
-#### Inspired By : whatsdev aka FreeCodeCamp
+### Developed by Logic Kiddie
+#### Inspired By : whatsdev video on FreeCodeCamp Youtube Channel.
