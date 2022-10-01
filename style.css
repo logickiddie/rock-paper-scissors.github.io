@@ -12,7 +12,7 @@ body{
 }
 header {
 	background-color: white;
-	padding: 20px;
+	padding: 21px;
 }
 header h1{
 	color: #24272E;
@@ -50,7 +50,7 @@ header h1{
 }
 
 .result {
-	font-size: 40px;
+	font-size: 44px;
 	font-family: Asap,sans-serif;
 	color: white;
 	text-align: center;
