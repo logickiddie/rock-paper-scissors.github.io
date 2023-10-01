@@ -20,11 +20,6 @@ This is a Python-based console application that allows users to play the classic
 git clone https://github.com/logickiddie/rock-paper-scissors.github.io
 ```
 
-2. Navigate to the project directory:
-
-```bash
-cd rock-paper-scissors
-```
 
 ## Usage
 
