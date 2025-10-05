@@ -1,36 +1,36 @@
-# Rock, Paper, Scissors Game
+# Rock Paper Scissors
 
-A simple console-based Rock, Paper, Scissors game developed by Logic Kiddie, inspired by a tutorial on the FreeCodeCamp YouTube Channel.
-
-## Introduction
-
-This is a Python-based console application that allows users to play the classic game of Rock, Paper, Scissors against the computer.
+A simple web-based Rock Paper Scissors game built with HTML, CSS, and JavaScript.
 
 ## Features
 
-- Player can choose between Rock, Paper, or Scissors.
-- The computer randomly selects its move.
-- The winner is determined based on the rules of the game.
+- Play against the computer
+- Responsive design for desktop and mobile
+- Score tracking
 
-## Getting Started
+## Installation
 
 1. Clone the repository:
-
-```bash
-git clone https://github.com/logickiddie/rock-paper-scissors.github.io
-```
-
+   ```bash
+   git clone https://github.com/logickiddie/rock-paper-scissors.github.io.git
+   ```
+2. Navigate to the project directory:
+   ```bash
+   cd rock-paper-scissors.github.io
+   ```
 
 ## Usage
 
-Follow the on-screen instructions to make your move. The computer will also make its move, and the winner will be announced.
+Open `index.html` in your web browser to start playing.
 
 ## Contributing
 
-If you'd like to contribute to the project, please fork the repository and submit a pull request. Feel free to open issues for any suggestions or bug reports.
+Contributions are welcome! Please fork the repository and submit a pull request.
 
+## License
 
+This project is licensed under the MIT License.
 ## Acknowledgements
 
-- Logic Kiddie
+- FreeCodeCamp YouTube Channel
 - FreeCodeCamp YouTube Channel
