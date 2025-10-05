@@ -1,44 +1,94 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 
 <head>
     <meta charset="utf-8">
-    <title>ROCK PAPER SCISSORS GAME</title>
-    <h1>HACKTOBERFEST 2022</h1>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Play Rock Paper Scissors online! A fun interactive game built with HTML, CSS, and JavaScript. Challenge the computer and test your luck!">
+    <meta name="keywords" content="rock paper scissors, game, online game, javascript game, web game">
+    <meta name="author" content="Logic Kiddie">
+    
+    <title>Rock Paper Scissors Game | Play Online</title>
+    
+    <!-- Open Graph meta tags for social sharing -->
+    <meta property="og:title" content="Rock Paper Scissors Game">
+    <meta property="og:description" content="Play the classic Rock Paper Scissors game online!">
+    <meta property="og:type" content="website">
+    
     <link rel="stylesheet" type="text/css" href="style.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    
+    <!-- Favicon -->
+    <link rel="icon" type="image/png" href="favicon.png">
 </head>
 
 <body>
     <header>
-        <marquee direction="left">
-            <h1>ROCK PAPER SCISSORS</h1>
-        </marquee>
-
+        <div class="header-content">
+            <h1 class="game-title">🎮 ROCK PAPER SCISSORS</h1>
+            <p class="subtitle">HACKTOBERFEST 2025</p>
+        </div>
     </header>
-    <div class="scoreboard">
-        <div id="user-label" class="badge">user</div>
-        <div id="comp-label" class="badge">comp</div>
-        <span id="user-score">0</span>:<span id="comp-score">0</span>
-    </div>
-    <div class="result">
-        <p>Paper covers Rock. You Win!!!</p>
-   </div>
-    <div class="choices">
-        <div id="r" class="choice">
-            <img src="rock.png" alt="">
-        </div>
-        <div id="p" class="choice">
-            <img src="paper.png" alt="">
-        </div>
-        <div id="s" class="choice">
-            <img src="scissors.png" alt="">
-        </div>
-    </div>
 
-    <p id="action-message">Make Your Move</p>
-    <footer class="copyright">Made with <i class="fa fa-heart"></i> By Ayaz Alam</footer>
-    <script src="app.js" type="text/javascript" charset="utf-8"></script>
-</body> 
+    <main>
+        <section class="game-container">
+            <div class="scoreboard" role="region" aria-label="Game scoreboard">
+                <div class="score-labels">
+                    <div id="user-label" class="badge">Player</div>
+                    <div id="comp-label" class="badge">Computer</div>
+                </div>
+                <div class="score-display">
+                    <span id="user-score" aria-label="Player score">0</span>
+                    <span class="score-separator">:</span>
+                    <span id="comp-score" aria-label="Computer score">0</span>
+                </div>
+            </div>
+
+            <div class="result" role="region" aria-label="Game result" aria-live="polite">
+                <p>Choose your move to start the game! 🎯</p>
+            </div>
+
+            <div class="choices" role="group" aria-label="Game choices">
+                <button id="r" class="choice" aria-label="Choose Rock" title="Rock">
+                    <img src="rock.png" alt="Rock" loading="lazy">
+                    <span class="choice-label">Rock</span>
+                </button>
+                <button id="p" class="choice" aria-label="Choose Paper" title="Paper">
+                    <img src="paper.png" alt="Paper" loading="lazy">
+                    <span class="choice-label">Paper</span>
+                </button>
+                <button id="s" class="choice" aria-label="Choose Scissors" title="Scissors">
+                    <img src="scissors.png" alt="Scissors" loading="lazy">
+                    <span class="choice-label">Scissors</span>
+                </button>
+            </div>
+
+            <div class="game-status">
+                <p id="action-message" role="status" aria-live="polite">Make Your Move</p>
+            </div>
+        </section>
+
+        <section class="game-rules" aria-label="Game rules">
+            <details>
+                <summary>How to Play 🎯</summary>
+                <ul>
+                    <li>🪨 Rock beats Scissors</li>
+                    <li>📄 Paper beats Rock</li>
+                    <li>✂️ Scissors beats Paper</li>
+                    <li>First to reach 10 points wins!</li>
+                </ul>
+            </details>
+        </section>
+    </main>
+
+    <footer class="copyright">
+        <p>Made with <i class="fas fa-heart" aria-hidden="true"></i> by 
+            <a href="https://github.com/logickiddie" target="_blank" rel="noopener noreferrer">Logic Kiddie</a>
+        </p>
+        <p class="year">&copy; 2025</p>
+    </footer>
+
+    <script src="app.js" type="text/javascript"></script>
+</body>
 
 </html>
